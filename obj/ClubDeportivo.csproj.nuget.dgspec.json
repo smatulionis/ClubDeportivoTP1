@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\ClubDeportivoFase4.csproj": {}
+    "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\ClubDeportivo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\ClubDeportivoFase4.csproj": {
+    "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\ClubDeportivo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\ClubDeportivoFase4.csproj",
-        "projectName": "ClubDeportivoFase4",
-        "projectPath": "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\ClubDeportivoFase4.csproj",
+        "projectUniqueName": "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\ClubDeportivo.csproj",
+        "projectName": "ClubDeportivo",
+        "projectPath": "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\ClubDeportivo.csproj",
         "packagesPath": "C:\\Users\\Sebastián\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\obj\\",
         "projectStyle": "PackageReference",

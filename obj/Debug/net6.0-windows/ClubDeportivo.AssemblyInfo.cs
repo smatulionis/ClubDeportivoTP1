@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ClubDeportivoFase4")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("ClubDeportivo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c04dead9d22a828b4afb3fe927c44cf586d11167")]
-[assembly: System.Reflection.AssemblyProductAttribute("ClubDeportivoFase4")]
-[assembly: System.Reflection.AssemblyTitleAttribute("ClubDeportivoFase4")]
+[assembly: System.Reflection.AssemblyProductAttribute("ClubDeportivo")]
+[assembly: System.Reflection.AssemblyTitleAttribute("ClubDeportivo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]

@@ -1,6 +1,6 @@
 ﻿
 
-namespace ClubDeportivoFase4
+namespace ClubDeportivo
 {
     partial class FormLogin
     {

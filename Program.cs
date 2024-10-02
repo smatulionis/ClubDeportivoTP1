@@ -1,4 +1,4 @@
-namespace ClubDeportivoFase4
+namespace ClubDeportivo
 {
     internal static class Program
     {

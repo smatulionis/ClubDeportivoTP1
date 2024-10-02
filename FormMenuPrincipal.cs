@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ClubDeportivoFase4
+namespace ClubDeportivo
 {
     public partial class FormMenuPrincipal : Form
     {

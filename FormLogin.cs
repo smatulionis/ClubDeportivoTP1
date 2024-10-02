@@ -1,8 +1,8 @@
-using ClubDeportivoFase4.Datos;
+using ClubDeportivo.Datos;
 using Org.BouncyCastle.Pqc.Crypto.Lms;
 using System.Data;
 
-namespace ClubDeportivoFase4
+namespace ClubDeportivo
 {
     public partial class FormLogin : Form
     {
