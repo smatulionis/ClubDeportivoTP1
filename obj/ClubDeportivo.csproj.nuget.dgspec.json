@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\ClubDeportivo.csproj": {}
+    "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\Fase4\\ClubDeportivoFase4\\ClubDeportivo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\ClubDeportivo.csproj": {
+    "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\Fase4\\ClubDeportivoFase4\\ClubDeportivo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\ClubDeportivo.csproj",
+        "projectUniqueName": "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\Fase4\\ClubDeportivoFase4\\ClubDeportivo.csproj",
         "projectName": "ClubDeportivo",
-        "projectPath": "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\ClubDeportivo.csproj",
+        "projectPath": "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\Fase4\\ClubDeportivoFase4\\ClubDeportivo.csproj",
         "packagesPath": "C:\\Users\\Sebastián\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\obj\\",
+        "outputPath": "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\Fase4\\ClubDeportivoFase4\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
