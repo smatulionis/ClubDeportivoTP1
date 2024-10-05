@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CZZj128CUsw=",
+  "dgSpecHash": "In9H/fEUykw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\Fase4\\ClubDeportivoFase4\\ClubDeportivo.csproj",
+  "projectFilePath": "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\pruebaGit\\Proyecto-ClubDeportivo\\ClubDeportivo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sebastián\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\Sebastián\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",

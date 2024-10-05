@@ -1557,11 +1557,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\Fase4\\ClubDeportivoFase4\\ClubDeportivo.csproj",
+      "projectUniqueName": "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\pruebaGit\\Proyecto-ClubDeportivo\\ClubDeportivo.csproj",
       "projectName": "ClubDeportivo",
-      "projectPath": "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\Fase4\\ClubDeportivoFase4\\ClubDeportivo.csproj",
+      "projectPath": "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\pruebaGit\\Proyecto-ClubDeportivo\\ClubDeportivo.csproj",
       "packagesPath": "C:\\Users\\Sebastián\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\Fase4\\ClubDeportivoFase4\\obj\\",
+      "outputPath": "C:\\Users\\Sebastián\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\pruebaGit\\Proyecto-ClubDeportivo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
