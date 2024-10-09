@@ -44,6 +44,10 @@
             btnIngresar = new Button();
             btnLimpiar = new Button();
             btnVolver = new Button();
+            lblCliente = new Label();
+            cboCliente = new ComboBox();
+            label1 = new Label();
+            chkApto = new CheckBox();
             SuspendLayout();
             // 
             // lblInscripcion
@@ -168,7 +172,7 @@
             // 
             // btnIngresar
             // 
-            btnIngresar.Location = new Point(334, 295);
+            btnIngresar.Location = new Point(326, 358);
             btnIngresar.Name = "btnIngresar";
             btnIngresar.Size = new Size(101, 31);
             btnIngresar.TabIndex = 13;
@@ -178,7 +182,7 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(462, 295);
+            btnLimpiar.Location = new Point(451, 358);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(101, 31);
             btnLimpiar.TabIndex = 14;
@@ -188,7 +192,7 @@
             // 
             // btnVolver
             // 
-            btnVolver.Location = new Point(583, 295);
+            btnVolver.Location = new Point(574, 358);
             btnVolver.Name = "btnVolver";
             btnVolver.Size = new Size(101, 31);
             btnVolver.TabIndex = 15;
@@ -196,11 +200,54 @@
             btnVolver.UseVisualStyleBackColor = true;
             btnVolver.Click += btnVolver_Click;
             // 
+            // lblCliente
+            // 
+            lblCliente.AutoSize = true;
+            lblCliente.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCliente.Location = new Point(326, 253);
+            lblCliente.Name = "lblCliente";
+            lblCliente.Size = new Size(44, 15);
+            lblCliente.TabIndex = 16;
+            lblCliente.Text = "Cliente";
+            // 
+            // cboCliente
+            // 
+            cboCliente.FormattingEnabled = true;
+            cboCliente.Items.AddRange(new object[] { "Socio", "No Socio" });
+            cboCliente.Location = new Point(372, 250);
+            cboCliente.Name = "cboCliente";
+            cboCliente.Size = new Size(84, 23);
+            cboCliente.TabIndex = 17;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(462, 250);
+            label1.Name = "label1";
+            label1.Size = new Size(12, 15);
+            label1.TabIndex = 18;
+            label1.Text = "*";
+            // 
+            // chkApto
+            // 
+            chkApto.AutoSize = true;
+            chkApto.Location = new Point(326, 300);
+            chkApto.Name = "chkApto";
+            chkApto.Size = new Size(85, 19);
+            chkApto.TabIndex = 19;
+            chkApto.Text = "Apto Físico";
+            chkApto.UseVisualStyleBackColor = true;
+            // 
             // FormInscripcion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(chkApto);
+            Controls.Add(label1);
+            Controls.Add(cboCliente);
+            Controls.Add(lblCliente);
             Controls.Add(btnVolver);
             Controls.Add(btnLimpiar);
             Controls.Add(btnIngresar);
@@ -241,5 +288,9 @@
         private Button btnIngresar;
         private Button btnLimpiar;
         private Button btnVolver;
+        private Label lblCliente;
+        private ComboBox cboCliente;
+        private Label label1;
+        private CheckBox chkApto;
     }
 }

@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|c:\\users\\sebasti\u00E1n\\documents\\tecnicatura desarrollo software\\desarrollo sist orientados a obj\\clubdeportivo\\proyecto-clubdeportivo\\entidades\\e_socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|solutionrelative:entidades\\e_socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|c:\\users\\sebasti\u00E1n\\documents\\tecnicatura desarrollo software\\desarrollo sist orientados a obj\\clubdeportivo\\proyecto-clubdeportivo\\datos\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|solutionrelative:datos\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|c:\\users\\sebasti\u00E1n\\documents\\tecnicatura desarrollo software\\desarrollo sist orientados a obj\\clubdeportivo\\proyecto-clubdeportivo\\datos\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|solutionrelative:datos\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|c:\\users\\sebasti\u00E1n\\documents\\tecnicatura desarrollo software\\desarrollo sist orientados a obj\\clubdeportivo\\proyecto-clubdeportivo\\entidades\\e_cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|solutionrelative:entidades\\e_cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|c:\\users\\sebasti\u00E1n\\documents\\tecnicatura desarrollo software\\desarrollo sist orientados a obj\\clubdeportivo\\proyecto-clubdeportivo\\datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|solutionrelative:datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|c:\\users\\sebasti\u00E1n\\documents\\tecnicatura desarrollo software\\desarrollo sist orientados a obj\\clubdeportivo\\proyecto-clubdeportivo\\datos\\socios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|solutionrelative:datos\\socios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|c:\\users\\sebasti\u00E1n\\documents\\tecnicatura desarrollo software\\desarrollo sist orientados a obj\\clubdeportivo\\proyecto-clubdeportivo\\forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|solutionrelative:forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "E_Socio.cs",
-              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\Entidades\\E_Socio.cs",
-              "RelativeDocumentMoniker": "Entidades\\E_Socio.cs",
-              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\Entidades\\E_Socio.cs",
-              "RelativeToolTip": "Entidades\\E_Socio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T17:10:27.583Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Usuarios.cs",
-              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\Datos\\Usuarios.cs",
-              "RelativeDocumentMoniker": "Datos\\Usuarios.cs",
-              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\Datos\\Usuarios.cs",
-              "RelativeToolTip": "Datos\\Usuarios.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAqwC4AAAAAAAAAAAAAAA==",
+              "Title": "E_Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\Entidades\\E_Cliente.cs",
+              "RelativeDocumentMoniker": "Entidades\\E_Cliente.cs",
+              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\Entidades\\E_Cliente.cs",
+              "RelativeToolTip": "Entidades\\E_Cliente.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T17:10:22.614Z",
+              "WhenOpened": "2024-10-09T19:32:08.566Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Conexion.cs",
-              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\Datos\\Conexion.cs",
-              "RelativeDocumentMoniker": "Datos\\Conexion.cs",
-              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\Datos\\Conexion.cs",
-              "RelativeToolTip": "Datos\\Conexion.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAUwDcAAAAAAAAAAAAAAA==",
+              "Title": "FormInscripcion.cs",
+              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\FormInscripcion.cs",
+              "RelativeDocumentMoniker": "FormInscripcion.cs",
+              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\FormInscripcion.cs",
+              "RelativeToolTip": "FormInscripcion.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAIwG4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T17:10:11.752Z",
+              "WhenOpened": "2024-10-09T17:56:55.939Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Socios.cs",
-              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\Datos\\Socios.cs",
-              "RelativeDocumentMoniker": "Datos\\Socios.cs",
-              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\Datos\\Socios.cs",
-              "RelativeToolTip": "Datos\\Socios.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAUwDYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Clientes.cs",
+              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\Datos\\Clientes.cs",
+              "RelativeDocumentMoniker": "Datos\\Clientes.cs",
+              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\Datos\\Clientes.cs",
+              "RelativeToolTip": "Datos\\Clientes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T17:09:45.563Z",
+              "WhenOpened": "2024-10-09T17:49:21.196Z",
               "EditorCaption": ""
             }
           ]

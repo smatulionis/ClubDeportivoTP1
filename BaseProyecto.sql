@@ -25,12 +25,23 @@ constraint fk_usuario foreign key(RolUsuario) references roles(RolUsuario)
 insert into usuario(NombreUsuario,Contrasenia,RolUsuario) values
 ('Juan20','123456',1), ('Pepe10','1234',2);
 
+create table cliente(
+IdCliente int auto_increment primary key,
+Nombre varchar(30) not null,
+Apellido varchar(40) not null,
+TipoDoc varchar(20) not null,
+Documento int not null,
+AptoFisico boolean not null,
+UNIQUE (TipoDoc, Documento)
+);
+
 create table socio(
-IdSocio int,
-Nombre varchar(30),
-Apellido varchar(40),
-TipoDoc varchar(20),
-Documento int,
-constraint pk_socio primary key(IdSocio)
+IdCliente int primary key,
+foreign key (IdCliente) references Cliente(IdCliente) on delete cascade
+);
+
+create table noSocio(
+IdCliente int primary key,
+foreign key (IdCliente) references Cliente(IdCliente) on delete cascade
 );
 

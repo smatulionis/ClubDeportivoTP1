@@ -19,6 +19,8 @@ namespace ClubDeportivo
         {
             InitializeComponent();
             _formMenuPrincipal = formMenuPrincipal;
+            cboTipo.SelectedIndex = 0;
+            cboCliente.SelectedIndex = 0;
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
@@ -30,28 +32,64 @@ namespace ClubDeportivo
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             if (txtNombre.Text == "" || txtApellido.Text == "" ||
-            txtDocumento.Text == "" || cboTipo.Text == "")
+            txtDocumento.Text == "" || cboTipo.Text == "" || cboCliente.Text == "")
             {
                 MessageBox.Show("Debe completar datos requeridos (*) ",
                 "AVISO DEL SISTEMA", MessageBoxButtons.OK,
                 MessageBoxIcon.Error);
             }
+            else if (!chkApto.Checked)
+            {
+                MessageBox.Show("Debe tener el Apto Físico para inscribirse.", "AVISO DEL SISTEMA",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             else
             {
                 string respuesta;
-                E_Socio socio = new E_Socio();
-                socio.Nombre = txtNombre.Text;
-                socio.Apellido = txtApellido.Text;
-                socio.Documento = Convert.ToInt32(txtDocumento.Text);
-                socio.TipoDoc = cboTipo.Text;
-                Datos.Socios postulantes = new Datos.Socios();
-                respuesta = postulantes.Nuevo_socio(socio);
+                string tipoCliente = cboCliente.SelectedItem.ToString();
+
+                E_Cliente cliente = new E_Cliente();
+                cliente.Nombre = txtNombre.Text;
+                cliente.Apellido = txtApellido.Text;
+                cliente.Documento = Convert.ToInt32(txtDocumento.Text);
+                cliente.TipoDoc = cboTipo.Text;
+                cliente.AptoFisico = chkApto.Checked;
+
+                if (tipoCliente == "Socio")
+                {
+                    E_Socio socio = new E_Socio
+                    {
+                        Nombre = cliente.Nombre,
+                        Apellido = cliente.Apellido,
+                        Documento = cliente.Documento,
+                        TipoDoc = cliente.TipoDoc,
+                        AptoFisico = cliente.AptoFisico
+                    };
+
+                    Datos.Clientes clientes = new Datos.Clientes();
+                    respuesta = clientes.nuevoCliente(socio, true);
+                }
+                else
+                {
+                    E_NoSocio noSocio = new E_NoSocio
+                    {
+                        Nombre = cliente.Nombre,
+                        Apellido = cliente.Apellido,
+                        Documento = cliente.Documento,
+                        TipoDoc = cliente.TipoDoc,
+                        AptoFisico = cliente.AptoFisico
+                    };
+
+                    Datos.Clientes clientes = new Datos.Clientes();
+                    respuesta = clientes.nuevoCliente(noSocio, false);
+                }
+
                 bool esnumero = int.TryParse(respuesta, out int codigo);
                 if (esnumero)
                 {
-                    if (codigo == 1)
+                    if (codigo == -1)
                     {
-                        MessageBox.Show("SOCIO YA EXISTE", "AVISO DEL SISTEMA",
+                        MessageBox.Show("CLIENTE YA EXISTE", "AVISO DEL SISTEMA",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
                     }
@@ -70,7 +108,9 @@ namespace ClubDeportivo
             txtNombre.Text = "";
             txtApellido.Text = "";
             txtDocumento.Text = "";
-            cboTipo.Text = "";
+            cboTipo.SelectedIndex = 0;
+            cboCliente.SelectedIndex = 0;
+            chkApto.Checked = false;
             txtNombre.Focus();
         }
     }

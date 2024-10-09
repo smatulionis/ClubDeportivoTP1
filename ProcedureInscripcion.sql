@@ -1,3 +1,4 @@
+/*
 delimiter //
 
 create procedure NuevoSocio(in Nom varchar(30),in Ape varchar(40),in Tip varchar(20), in Doc int, out rta int)
@@ -23,3 +24,41 @@ create procedure NuevoSocio(in Nom varchar(30),in Ape varchar(40),in Tip varchar
     
      end 
      //
+     */
+delimiter //
+
+create procedure NuevoCliente(
+    in Nom varchar(30),
+    in Ape varchar(40),
+    in Tip varchar(20),
+    in Doc int,
+    in ApFis boolean,
+    in esSocio boolean,
+    out rta int
+)
+begin
+    declare existe int default 0;
+    declare idCliente int default 0;
+
+    set existe = (select count(*) from cliente where TipoDoc = Tip and Documento = Doc);
+
+    if existe = 0 then
+        insert into cliente (Nombre, Apellido, TipoDoc, Documento, AptoFisico) 
+        values (Nom, Ape, Tip, Doc, ApFis);
+
+        set idCliente = LAST_INSERT_ID();
+
+        if esSocio then
+            insert into socio (IdCliente) 
+            values (idCliente);
+        else
+            insert into noSocio (IdCliente) 
+            values (idCliente);
+        end if;
+
+        set rta = idCliente;
+    else
+        set rta = -1;
+    end if;
+end
+//
