@@ -28,33 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            lblUsuario = new Label();
+            btnInscribir = new Button();
+            btnSalir = new Button();
             SuspendLayout();
             // 
-            // label1
+            // lblUsuario
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(363, 87);
-            label1.Name = "label1";
-            label1.Size = new Size(142, 28);
-            label1.TabIndex = 0;
-            label1.Text = "Menu Principal";
+            lblUsuario.AutoSize = true;
+            lblUsuario.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblUsuario.Location = new Point(66, 34);
+            lblUsuario.Name = "lblUsuario";
+            lblUsuario.Size = new Size(0, 19);
+            lblUsuario.TabIndex = 0;
+            // 
+            // btnInscribir
+            // 
+            btnInscribir.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            btnInscribir.Location = new Point(87, 101);
+            btnInscribir.Name = "btnInscribir";
+            btnInscribir.Size = new Size(258, 91);
+            btnInscribir.TabIndex = 1;
+            btnInscribir.Text = "Inscribir Cliente";
+            btnInscribir.UseVisualStyleBackColor = true;
+            btnInscribir.Click += btnInscribir_Click;
+            // 
+            // btnSalir
+            // 
+            btnSalir.Location = new Point(583, 51);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(84, 35);
+            btnSalir.TabIndex = 2;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // FormMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label1);
+            Controls.Add(btnSalir);
+            Controls.Add(btnInscribir);
+            Controls.Add(lblUsuario);
             Name = "FormMenuPrincipal";
             Text = "FormMenuPrincipal";
+            Load += FormMenuPrincipal_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
+        private Label lblUsuario;
+        private Button btnInscribir;
+        private Button btnSalir;
     }
 }

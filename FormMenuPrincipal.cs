@@ -16,5 +16,26 @@ namespace ClubDeportivo
         {
             InitializeComponent();
         }
+
+        internal string? rol;
+        internal string? usuario;
+
+        private void FormMenuPrincipal_Load(object sender, EventArgs e)
+        {
+            lblUsuario.Text = "USUARIO: " + usuario + " " + "(" + rol +
+            ")";
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnInscribir_Click(object sender, EventArgs e)
+        {
+            FormInscripcion frmInscripcion = new FormInscripcion(this);
+            frmInscripcion.Show();
+            this.Hide();
+        }
     }
 }

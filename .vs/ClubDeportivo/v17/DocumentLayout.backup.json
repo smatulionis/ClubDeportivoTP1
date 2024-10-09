@@ -1,34 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\pruebaGit\\Proyecto-ClubDeportivo\\",
+  "WorkspaceRootPath": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|c:\\users\\sebasti\u00E1n\\documents\\tecnicatura desarrollo software\\desarrollo sist orientados a obj\\pruebagit\\proyecto-clubdeportivo\\datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|solutionrelative:datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|c:\\users\\sebasti\u00E1n\\documents\\tecnicatura desarrollo software\\desarrollo sist orientados a obj\\pruebagit\\proyecto-clubdeportivo\\datos\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|solutionrelative:datos\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|c:\\users\\sebasti\u00E1n\\documents\\tecnicatura desarrollo software\\desarrollo sist orientados a obj\\pruebagit\\proyecto-clubdeportivo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\pruebaGit\\Proyecto-ClubDeportivo\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivoFase4.csproj|C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\pruebaGit\\Proyecto-ClubDeportivo\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivoFase4.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|c:\\users\\sebasti\u00E1n\\documents\\tecnicatura desarrollo software\\desarrollo sist orientados a obj\\pruebagit\\proyecto-clubdeportivo\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|solutionrelative:formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|c:\\users\\sebasti\u00E1n\\documents\\tecnicatura desarrollo software\\desarrollo sist orientados a obj\\pruebagit\\proyecto-clubdeportivo\\formmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|c:\\users\\sebasti\u00E1n\\documents\\tecnicatura desarrollo software\\desarrollo sist orientados a obj\\clubdeportivo\\proyecto-clubdeportivo\\formmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|solutionrelative:formmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|c:\\users\\sebasti\u00E1n\\documents\\tecnicatura desarrollo software\\desarrollo sist orientados a obj\\clubdeportivo\\proyecto-clubdeportivo\\forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|solutionrelative:forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|c:\\users\\sebasti\u00E1n\\documents\\tecnicatura desarrollo software\\desarrollo sist orientados a obj\\clubdeportivo\\proyecto-clubdeportivo\\forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|solutionrelative:forminscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|c:\\users\\sebasti\u00E1n\\documents\\tecnicatura desarrollo software\\desarrollo sist orientados a obj\\clubdeportivo\\proyecto-clubdeportivo\\formmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|solutionrelative:formmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,92 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormLogin.cs",
-              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\pruebaGit\\Proyecto-ClubDeportivo\\FormLogin.cs",
-              "RelativeDocumentMoniker": "FormLogin.cs",
-              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\pruebaGit\\Proyecto-ClubDeportivo\\FormLogin.cs",
-              "RelativeToolTip": "FormLogin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "FormInscripcion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\FormInscripcion.cs",
+              "RelativeDocumentMoniker": "FormInscripcion.cs",
+              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\FormInscripcion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormInscripcion.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T18:44:00.653Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T14:44:31.835Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Usuarios.cs",
-              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\pruebaGit\\Proyecto-ClubDeportivo\\Datos\\Usuarios.cs",
-              "RelativeDocumentMoniker": "Datos\\Usuarios.cs",
-              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\pruebaGit\\Proyecto-ClubDeportivo\\Datos\\Usuarios.cs",
-              "RelativeToolTip": "Datos\\Usuarios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "FormInscripcion.cs",
+              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\FormInscripcion.cs",
+              "RelativeDocumentMoniker": "FormInscripcion.cs",
+              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\FormInscripcion.cs",
+              "RelativeToolTip": "FormInscripcion.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowBUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T20:35:21.566Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Conexion.cs",
-              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\pruebaGit\\Proyecto-ClubDeportivo\\Datos\\Conexion.cs",
-              "RelativeDocumentMoniker": "Datos\\Conexion.cs",
-              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\pruebaGit\\Proyecto-ClubDeportivo\\Datos\\Conexion.cs",
-              "RelativeToolTip": "Datos\\Conexion.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAADwvxgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T20:35:19.595Z",
+              "WhenOpened": "2024-10-09T15:22:42.668Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FormLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\pruebaGit\\Proyecto-ClubDeportivo\\FormLogin.cs",
-              "RelativeDocumentMoniker": "FormLogin.cs",
-              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\Fase4\\ClubDeportivoFase4\\FormLogin.cs [Design]",
-              "RelativeToolTip": "..\\..\\Fase4\\ClubDeportivoFase4\\FormLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T20:30:56.127Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\pruebaGit\\Proyecto-ClubDeportivo\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\pruebaGit\\Proyecto-ClubDeportivo\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T19:49:00.881Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormLogin.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\pruebaGit\\Proyecto-ClubDeportivo\\FormLogin.cs",
-              "RelativeDocumentMoniker": "FormLogin.cs",
-              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\Fase4\\ClubDeportivoFase4\\FormLogin.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Fase4\\ClubDeportivoFase4\\FormLogin.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T19:31:33.934Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormMenuPrincipal.cs",
-              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\pruebaGit\\Proyecto-ClubDeportivo\\FormMenuPrincipal.cs",
+              "Title": "FormMenuPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\FormMenuPrincipal.cs",
               "RelativeDocumentMoniker": "FormMenuPrincipal.cs",
-              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\pruebaGit\\Proyecto-ClubDeportivo\\FormMenuPrincipal.cs",
-              "RelativeToolTip": "FormMenuPrincipal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\FormMenuPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FormMenuPrincipal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T19:27:59.217Z"
+              "WhenOpened": "2024-10-09T14:24:27.177Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormMenuPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\FormMenuPrincipal.cs",
+              "RelativeDocumentMoniker": "FormMenuPrincipal.cs",
+              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\FormMenuPrincipal.cs",
+              "RelativeToolTip": "FormMenuPrincipal.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAowCMAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T15:54:40.735Z",
+              "EditorCaption": ""
             }
           ]
         }

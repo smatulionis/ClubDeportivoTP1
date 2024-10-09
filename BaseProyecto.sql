@@ -25,4 +25,12 @@ constraint fk_usuario foreign key(RolUsuario) references roles(RolUsuario)
 insert into usuario(NombreUsuario,Contrasenia,RolUsuario) values
 ('Juan20','123456',1), ('Pepe10','1234',2);
 
+create table socio(
+IdSocio int,
+Nombre varchar(30),
+Apellido varchar(40),
+TipoDoc varchar(20),
+Documento int,
+constraint pk_socio primary key(IdSocio)
+);
 

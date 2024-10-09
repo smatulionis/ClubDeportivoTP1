@@ -19,10 +19,13 @@ namespace ClubDeportivo
 
             if (tablaLogin.Rows.Count > 0)
             {
+                MessageBox.Show("Ingreso exitoso", "MENSAJES DEL SISTEMA",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                FormMenuPrincipal frmMenuPrincipal = new FormMenuPrincipal();
+                frmMenuPrincipal.rol = Convert.ToString(tablaLogin.Rows[0][0]);
+                frmMenuPrincipal.usuario = Convert.ToString(txtUsuario.Text);
+                frmMenuPrincipal.ShowDialog();
                 this.Hide();
-                Form formMenuPrincipal = new FormMenuPrincipal();
-                formMenuPrincipal.ShowDialog();
-                this.Close();
             }
             else
             {
