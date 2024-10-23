@@ -37,5 +37,19 @@ namespace ClubDeportivo
             frmInscripcion.Show();
             this.Hide();
         }
+
+        private void btnAsignarAct_Click(object sender, EventArgs e)
+        {
+            FormAsignarAct frmAsignarAct = new FormAsignarAct(this);
+            frmAsignarAct.Show();
+            this.Hide();
+        }
+
+        private void btnPagar_Click(object sender, EventArgs e)
+        {
+            FormPagar frmPagar = new FormPagar(this);
+            frmPagar.Show();
+            this.Hide();
+        }
     }
 }

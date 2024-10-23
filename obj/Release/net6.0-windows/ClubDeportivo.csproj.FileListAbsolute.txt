@@ -44,3 +44,4 @@ C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Or
 C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ClubDeportivo.pdb
 C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ClubDeportivo.genruntimeconfig.cache
 C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ref\ClubDeportivo.dll
+C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ClubDeportivo.FormAsignarAct.resources

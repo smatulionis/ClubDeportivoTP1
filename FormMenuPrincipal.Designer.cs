@@ -31,6 +31,8 @@
             lblUsuario = new Label();
             btnInscribir = new Button();
             btnSalir = new Button();
+            btnAsignarAct = new Button();
+            btnPagar = new Button();
             SuspendLayout();
             // 
             // lblUsuario
@@ -45,7 +47,7 @@
             // btnInscribir
             // 
             btnInscribir.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            btnInscribir.Location = new Point(87, 101);
+            btnInscribir.Location = new Point(91, 146);
             btnInscribir.Name = "btnInscribir";
             btnInscribir.Size = new Size(258, 91);
             btnInscribir.TabIndex = 1;
@@ -63,11 +65,35 @@
             btnSalir.UseVisualStyleBackColor = true;
             btnSalir.Click += btnSalir_Click;
             // 
+            // btnAsignarAct
+            // 
+            btnAsignarAct.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAsignarAct.Location = new Point(409, 146);
+            btnAsignarAct.Name = "btnAsignarAct";
+            btnAsignarAct.Size = new Size(258, 91);
+            btnAsignarAct.TabIndex = 3;
+            btnAsignarAct.Text = "Asignar Actividad";
+            btnAsignarAct.UseVisualStyleBackColor = true;
+            btnAsignarAct.Click += btnAsignarAct_Click;
+            // 
+            // btnPagar
+            // 
+            btnPagar.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            btnPagar.Location = new Point(91, 276);
+            btnPagar.Name = "btnPagar";
+            btnPagar.Size = new Size(258, 91);
+            btnPagar.TabIndex = 4;
+            btnPagar.Text = "Pagar";
+            btnPagar.UseVisualStyleBackColor = true;
+            btnPagar.Click += btnPagar_Click;
+            // 
             // FormMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnPagar);
+            Controls.Add(btnAsignarAct);
             Controls.Add(btnSalir);
             Controls.Add(btnInscribir);
             Controls.Add(lblUsuario);
@@ -83,5 +109,7 @@
         private Label lblUsuario;
         private Button btnInscribir;
         private Button btnSalir;
+        private Button btnAsignarAct;
+        private Button btnPagar;
     }
 }

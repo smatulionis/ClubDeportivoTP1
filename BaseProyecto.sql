@@ -27,11 +27,11 @@ insert into usuario(NombreUsuario,Contrasenia,RolUsuario) values
 
 create table cliente(
 IdCliente int auto_increment primary key,
-Nombre varchar(30) not null,
-Apellido varchar(40) not null,
-TipoDoc varchar(20) not null,
-Documento int not null,
-AptoFisico boolean not null,
+Nombre varchar(30),
+Apellido varchar(40),
+TipoDoc varchar(20),
+Documento int,
+AptoFisico boolean,
 UNIQUE (TipoDoc, Documento)
 );
 
@@ -43,6 +43,32 @@ foreign key (IdCliente) references Cliente(IdCliente) on delete cascade
 create table noSocio(
 IdCliente int primary key,
 foreign key (IdCliente) references Cliente(IdCliente) on delete cascade
+);
+
+create table actividad(
+IdActividad int auto_increment primary key,
+NombreActividad varchar(40),
+Monto float
+);
+
+create table cuota(
+IdCuota int auto_increment primary key,
+IdCliente int,
+Monto float,
+Fecha date,
+FormaPago varchar(40)
+);
+
+insert into actividad(NombreActividad,Monto) values
+('Yoga',10000), ('Musculación',5000), ('Pilates',15000), ('Calistenia',15000), ('Danza',20000);
+
+create table inscripcion(
+IdInscripcion int auto_increment key,
+IdCliente int,
+IdActividad int,
+Pagado bool,
+constraint fk_inscripcion_cliente foreign key (IdCliente) references cliente(IdCliente),
+constraint fk_inscripcion_actividad foreign key (IdActividad) references actividad(IdActividad)
 );
 
 delimiter //  
@@ -90,6 +116,71 @@ begin
         end if;
 
         set rta = idCliente;
+    else
+        set rta = -1;
+    end if;
+end
+//
+
+delimiter //
+
+create procedure InscribirCliente(
+    in Cli int,
+    in Act int,
+    in Pag bool,
+    out rta int
+)
+begin
+    declare clienteExiste int;
+
+    set clienteExiste = (select count(*) from cliente where IdCliente = Cli);
+
+    if clienteExiste = 0 then
+        set rta = -1;
+    else
+            insert into inscripcion (IdCliente, IdActividad, Pagado)
+            values (Cli, Act, Pag);
+
+            set rta = LAST_INSERT_ID();
+    end if;
+end
+//
+
+delimiter //
+
+create procedure AbonarCuota(
+    in Cli int,
+    in Monto float,
+    in Fecha date,
+    in FPago varchar(40)
+)
+begin
+		insert into cuota (IdCliente, Monto, Fecha, FormaPago)
+		values (Cli, Monto, Fecha, FPago);
+
+		update inscripcion
+        set Pagado = true
+        where IdCliente = Cli and Pagado = false;
+end 
+//
+
+delimiter //
+
+create procedure ObtenerTipoCliente(
+    in Cli int,
+    out rta int
+)
+begin
+    declare socioCount int;
+    declare noSocioCount int;
+
+    set socioCount = (select count(*) from socio where IdCliente = Cli);
+    set noSocioCount = (select count(*) from noSocio where IdCliente = Cli);
+
+    if socioCount > 0 then
+        set rta = 1;
+    elseif noSocioCount > 0 then
+        set rta = 2;
     else
         set rta = -1;
     end if;
