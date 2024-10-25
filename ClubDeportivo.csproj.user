@@ -4,6 +4,9 @@
     <Compile Update="FormAsignarAct.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormCarnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormComprobante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -17,6 +20,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormVencimiento.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

@@ -137,3 +137,5 @@ C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Or
 C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Debug\net6.0-windows\ClubDeportivo.FormAsignarAct.resources
 C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Debug\net6.0-windows\ClubDeportivo.FormComprobante.resources
 C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Debug\net6.0-windows\ClubDeportivo.FormPagar.resources
+C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Debug\net6.0-windows\ClubDeportivo.FormCarnet.resources
+C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Debug\net6.0-windows\ClubDeportivo.FormVencimiento.resources

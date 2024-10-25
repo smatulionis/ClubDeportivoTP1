@@ -18,12 +18,14 @@ namespace ClubDeportivo
     {
         private FormMenuPrincipal _formMenuPrincipal;
         public FormComprobante doc;
+        public FormCarnet carnet;
 
         public FormPagar(FormMenuPrincipal formMenuPrincipal)
         {
             InitializeComponent();
             _formMenuPrincipal = formMenuPrincipal;
             doc = new FormComprobante(_formMenuPrincipal);
+            carnet = new FormCarnet(_formMenuPrincipal);
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
@@ -40,6 +42,21 @@ namespace ClubDeportivo
 
         private void btnPagar_Click(object sender, EventArgs e)
         {
+            if (txtIdCliente.Text == "")
+            {
+                MessageBox.Show("Debe completar la casilla Id Cliente",
+                "AVISO DEL SISTEMA", MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!chkEfectivo.Checked && !chkTarjeta.Checked)
+            {
+                MessageBox.Show("Debe seleccionar la forma de pago", "AVISO DEL SISTEMA",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             MySqlConnection sqlCon = new MySqlConnection();
             try
             {
@@ -109,13 +126,17 @@ namespace ClubDeportivo
 
                     Datos.Cuota nuevaCuota = new Datos.Cuota();
                     nuevaCuota.pagarCuota(cuota);
+                    btnComprobante.Enabled = true;
+                    if (codigo == 1)
+                    {
+                        btnCarnet.Enabled = true;
+                    }
                     MessageBox.Show("CUOTA ABONADA CON ÉXITO", "AVISO DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Question);
                 }
                 else
                 {
                     MessageBox.Show("Error al procesar el tipo de cliente: " + respuesta, "AVISO DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                btnComprobante.Enabled = true;
             }
             catch (Exception ex)
             {
@@ -150,8 +171,10 @@ namespace ClubDeportivo
 
                     doc.actComprobante = reader.GetString(0);
                     doc.alumComprobante = reader.GetString(1);
+                    carnet.alumComprobante = reader.GetString(1);
                     doc.montoComprobante = reader.GetFloat(2);
                     doc.fechaComprobante = reader.GetDateTime(3);
+                    carnet.fechaComprobante = reader.GetDateTime(3);
                     doc.formaComprobante = reader.GetString(4);
                     int pagosAnteriores = reader.GetInt32(5);
                     doc.pagoRepetido = pagosAnteriores > 1;
@@ -174,7 +197,8 @@ namespace ClubDeportivo
 
         private void btnCarnet_Click(object sender, EventArgs e)
         {
-
+            carnet.Show();
+            this.Hide();
         }
     }
 }

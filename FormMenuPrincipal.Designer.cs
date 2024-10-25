@@ -33,6 +33,7 @@
             btnSalir = new Button();
             btnAsignarAct = new Button();
             btnPagar = new Button();
+            btnVencimiento = new Button();
             SuspendLayout();
             // 
             // lblUsuario
@@ -87,11 +88,23 @@
             btnPagar.UseVisualStyleBackColor = true;
             btnPagar.Click += btnPagar_Click;
             // 
+            // btnVencimiento
+            // 
+            btnVencimiento.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            btnVencimiento.Location = new Point(409, 276);
+            btnVencimiento.Name = "btnVencimiento";
+            btnVencimiento.Size = new Size(258, 91);
+            btnVencimiento.TabIndex = 5;
+            btnVencimiento.Text = "Listar socios con vencimiento de cuota";
+            btnVencimiento.UseVisualStyleBackColor = true;
+            btnVencimiento.Click += btnVencimiento_Click;
+            // 
             // FormMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnVencimiento);
             Controls.Add(btnPagar);
             Controls.Add(btnAsignarAct);
             Controls.Add(btnSalir);
@@ -111,5 +124,6 @@
         private Button btnSalir;
         private Button btnAsignarAct;
         private Button btnPagar;
+        private Button btnVencimiento;
     }
 }

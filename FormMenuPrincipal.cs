@@ -51,5 +51,12 @@ namespace ClubDeportivo
             frmPagar.Show();
             this.Hide();
         }
+
+        private void btnVencimiento_Click(object sender, EventArgs e)
+        {
+            FormVencimiento frmVencimiento = new FormVencimiento(this);
+            frmVencimiento.Show();
+            this.Hide();
+        }
     }
 }

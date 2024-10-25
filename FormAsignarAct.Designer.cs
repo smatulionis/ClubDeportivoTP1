@@ -36,7 +36,6 @@
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dtgvActividad).BeginInit();
             SuspendLayout();
             // 
@@ -44,7 +43,7 @@
             // 
             dtgvActividad.AllowUserToDeleteRows = false;
             dtgvActividad.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgvActividad.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4 });
+            dtgvActividad.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
             dtgvActividad.Location = new Point(54, 124);
             dtgvActividad.Name = "dtgvActividad";
             dtgvActividad.ReadOnly = true;
@@ -108,12 +107,6 @@
             Column3.Name = "Column3";
             Column3.ReadOnly = true;
             // 
-            // Column4
-            // 
-            Column4.HeaderText = "CUPO";
-            Column4.Name = "Column4";
-            Column4.ReadOnly = true;
-            // 
             // FormAsignarAct
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -142,6 +135,5 @@
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
     }
 }
