@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace ClubDeportivo.Datos
 {
-    internal class Clientes
+    abstract class Clientes
     {
-        public string nuevoCliente(E_Cliente cliente, bool esSocio)
+        protected string altaCliente(E_Cliente cliente, bool esSocio)
         {
             string? salida;
             MySqlConnection sqlCon = new MySqlConnection();
@@ -22,6 +22,7 @@ namespace ClubDeportivo.Datos
                 MySqlCommand comando = new MySqlCommand("NuevoCliente",
                 sqlCon);
                 comando.CommandType = CommandType.StoredProcedure;
+
                 comando.Parameters.Add("Nom", MySqlDbType.VarChar).Value =
                 cliente.Nombre;
                 comando.Parameters.Add("Ape", MySqlDbType.VarChar).Value =
@@ -56,7 +57,7 @@ namespace ClubDeportivo.Datos
             return salida;
         }
 
-        public string identificarTipoCliente(int idCliente)
+        public static string identificarTipoCliente(int idCliente)
         {
             string? salida;
             MySqlConnection sqlCon = new MySqlConnection();

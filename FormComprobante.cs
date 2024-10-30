@@ -13,11 +13,12 @@ namespace ClubDeportivo
 {
     public partial class FormComprobante : Form
     {
-        private FormMenuPrincipal _formMenuPrincipal;
-        public FormComprobante(FormMenuPrincipal formMenuPrincipal)
+        private FormPagar formPagar;
+
+        public FormComprobante(FormPagar formPagar)
         {
             InitializeComponent();
-            _formMenuPrincipal = formMenuPrincipal;
+            this.formPagar = formPagar;
         }
 
         public string? actComprobante;
@@ -37,8 +38,8 @@ namespace ClubDeportivo
 
             MessageBox.Show("Operación exitosa", "AVISO DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            _formMenuPrincipal.Show();
-            this.Close();
+            formPagar.Show();
+            this.Hide();
         }
 
         private void ImprimirForm1(object o, PrintPageEventArgs e)

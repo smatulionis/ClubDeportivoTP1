@@ -16,12 +16,10 @@ namespace ClubDeportivo
 {
     public partial class FormAsignarAct : Form
     {
-        private FormMenuPrincipal _formMenuPrincipal;
-
-        public FormAsignarAct(FormMenuPrincipal formMenuPrincipal)
+        FormMenuPrincipal principal = new FormMenuPrincipal();
+        public FormAsignarAct()
         {
             InitializeComponent();
-            _formMenuPrincipal = formMenuPrincipal;
         }
 
         private void FormAsignarAct_Load(object sender, EventArgs e)
@@ -108,6 +106,8 @@ namespace ClubDeportivo
                             MessageBox.Show("Almacenado con éxito con el Id Nro " + respuesta, "AVISO DEL SISTEMA",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Question);
+                            principal.Show();
+                            this.Hide();
                         }
                     }
                 }
@@ -116,7 +116,7 @@ namespace ClubDeportivo
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            _formMenuPrincipal.Show();
+            principal.Show();
             this.Hide();
         }
     }

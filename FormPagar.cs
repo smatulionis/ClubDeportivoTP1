@@ -16,21 +16,19 @@ namespace ClubDeportivo
 {
     public partial class FormPagar : Form
     {
-        private FormMenuPrincipal _formMenuPrincipal;
-        public FormComprobante doc;
-        public FormCarnet carnet;
+        private FormComprobante doc;
+        public FormCarnet carnet = new FormCarnet();
 
-        public FormPagar(FormMenuPrincipal formMenuPrincipal)
+        public FormPagar()
         {
             InitializeComponent();
-            _formMenuPrincipal = formMenuPrincipal;
-            doc = new FormComprobante(_formMenuPrincipal);
-            carnet = new FormCarnet(_formMenuPrincipal);
+            doc = new FormComprobante(this);
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            _formMenuPrincipal.Show();
+            FormMenuPrincipal principal = new FormMenuPrincipal();
+            principal.Show();
             this.Hide();
         }
 
@@ -87,8 +85,7 @@ namespace ClubDeportivo
                 E_Cuota cuota = new E_Cuota();
                 cuota.IdCliente = Convert.ToInt32(txtIdCliente.Text);
 
-                Clientes tipoCliente = new Clientes();
-                respuesta = tipoCliente.identificarTipoCliente(cuota.IdCliente);
+                respuesta = Clientes.identificarTipoCliente(cuota.IdCliente);
 
                 bool esnumero = int.TryParse(respuesta, out int codigo);
                 if (esnumero)
@@ -153,11 +150,16 @@ namespace ClubDeportivo
                 string query;
                 sqlCon = Conexion.getInstancia().CrearConexion();
 
-                query = ("select NombreActividad, concat(Nombre, ' ', Apellido), cuo.Monto, Fecha, FormaPago, (select count(cu.IdCuota) from cuota cu where cu.IdCliente = c.IdCliente) as PagosAnteriores from actividad a inner join inscripcion i on a.IdActividad = i.IdActividad" +
-                        " inner join cliente c on c.IdCliente = i.IdCliente " +
-                        " inner join cuota cuo on cuo.IdCliente = c.IdCliente " +
-                        "where c.IdCliente = " +
-                    txtIdCliente.Text);
+                query = ("select NombreActividad, concat(Nombre, ' ', Apellido), " +
+                         "(select cu.Monto from cuota cu where cu.IdCliente = c.IdCliente order by cu.Fecha desc limit 1) as MontoUltimaCuota, " +
+                         "(select cu.Fecha from cuota cu where cu.IdCliente = c.IdCliente order by cu.Fecha desc limit 1) as FechaUltimaCuota, " +
+                         "(select cu.FormaPago from cuota cu where cu.IdCliente = c.IdCliente order by cu.Fecha desc limit 1) as FormaPagoUltimaCuota, " +
+                         "(select min(cu.Fecha) from cuota cu where cu.IdCliente = c.IdCliente) as FechaPrimeraCuota " +
+                         "from actividad a " +
+                         "inner join inscripcion i on a.IdActividad = i.IdActividad " +
+                         "inner join cliente c on c.IdCliente = i.IdCliente " +
+                         "inner join cuota cuo on cuo.IdCliente = c.IdCliente " +
+                         "where c.IdCliente = " + txtIdCliente.Text);
 
                 MySqlCommand comando = new MySqlCommand(query, sqlCon);
                 comando.CommandType = CommandType.Text;
@@ -172,12 +174,11 @@ namespace ClubDeportivo
                     doc.actComprobante = reader.GetString(0);
                     doc.alumComprobante = reader.GetString(1);
                     carnet.alumComprobante = reader.GetString(1);
-                    doc.montoComprobante = reader.GetFloat(2);
+                    doc.montoComprobante = reader.GetFloat(2);   
                     doc.fechaComprobante = reader.GetDateTime(3);
-                    carnet.fechaComprobante = reader.GetDateTime(3);
-                    doc.formaComprobante = reader.GetString(4);
-                    int pagosAnteriores = reader.GetInt32(5);
-                    doc.pagoRepetido = pagosAnteriores > 1;
+                    doc.formaComprobante = reader.GetString(4);    
+                    carnet.fechaComprobante = reader.GetDateTime(5); 
+                    doc.pagoRepetido = carnet.fechaComprobante.Date < DateTime.Now.Date;
                 }
                 else
                 {
@@ -193,6 +194,7 @@ namespace ClubDeportivo
                 if (sqlCon.State == ConnectionState.Open)
                 { sqlCon.Close(); };
             }
+
         }
 
         private void btnCarnet_Click(object sender, EventArgs e)

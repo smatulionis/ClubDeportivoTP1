@@ -22,8 +22,8 @@ namespace ClubDeportivo
                 MessageBox.Show("Ingreso exitoso", "MENSAJES DEL SISTEMA",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
                 FormMenuPrincipal frmMenuPrincipal = new FormMenuPrincipal();
-                frmMenuPrincipal.rol = Convert.ToString(tablaLogin.Rows[0][0]);
-                frmMenuPrincipal.usuario = Convert.ToString(txtUsuario.Text);
+                SesionUsuario.Rol = Convert.ToString(tablaLogin.Rows[0][0]);
+                SesionUsuario.Usuario = Convert.ToString(txtUsuario.Text);
                 frmMenuPrincipal.ShowDialog();
                 this.Hide();
             }

@@ -1,4 +1,5 @@
-﻿using ClubDeportivo.Entidades;
+﻿using ClubDeportivo.Datos;
+using ClubDeportivo.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,19 +14,17 @@ namespace ClubDeportivo
 {
     public partial class FormInscripcion : Form
     {
-        private FormMenuPrincipal _formMenuPrincipal;
-
-        public FormInscripcion(FormMenuPrincipal formMenuPrincipal)
+        FormMenuPrincipal principal = new FormMenuPrincipal();
+        public FormInscripcion()
         {
             InitializeComponent();
-            _formMenuPrincipal = formMenuPrincipal;
             cboTipo.SelectedIndex = 0;
             cboCliente.SelectedIndex = 0;
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            _formMenuPrincipal.Show();
+            principal.Show();
             this.Hide();
         }
 
@@ -48,40 +47,33 @@ namespace ClubDeportivo
                 string respuesta;
                 string tipoCliente = cboCliente.SelectedItem.ToString();
 
-                E_Cliente cliente = new E_Cliente();
-                cliente.Nombre = txtNombre.Text;
-                cliente.Apellido = txtApellido.Text;
-                cliente.Documento = Convert.ToInt32(txtDocumento.Text);
-                cliente.TipoDoc = cboTipo.Text;
-                cliente.AptoFisico = chkApto.Checked;
-
                 if (tipoCliente == "Socio")
                 {
                     E_Socio socio = new E_Socio
                     {
-                        Nombre = cliente.Nombre,
-                        Apellido = cliente.Apellido,
-                        Documento = cliente.Documento,
-                        TipoDoc = cliente.TipoDoc,
-                        AptoFisico = cliente.AptoFisico
+                        Nombre = txtNombre.Text,
+                        Apellido = txtApellido.Text,
+                        Documento = Convert.ToInt32(txtDocumento.Text),
+                        TipoDoc = cboTipo.Text,
+                        AptoFisico = chkApto.Checked
                     };
 
-                    Datos.Clientes clientes = new Datos.Clientes();
-                    respuesta = clientes.nuevoCliente(socio, true);
+                    Socios socios = new Socios();
+                    respuesta = socios.nuevoCliente(socio);
                 }
                 else
                 {
                     E_NoSocio noSocio = new E_NoSocio
                     {
-                        Nombre = cliente.Nombre,
-                        Apellido = cliente.Apellido,
-                        Documento = cliente.Documento,
-                        TipoDoc = cliente.TipoDoc,
-                        AptoFisico = cliente.AptoFisico
+                        Nombre = txtNombre.Text,
+                        Apellido = txtApellido.Text,
+                        Documento = Convert.ToInt32(txtDocumento.Text),
+                        TipoDoc = cboTipo.Text,
+                        AptoFisico = chkApto.Checked
                     };
 
-                    Datos.Clientes clientes = new Datos.Clientes();
-                    respuesta = clientes.nuevoCliente(noSocio, false);
+                    NoSocios noSocios = new NoSocios();
+                    respuesta = noSocios.nuevoCliente(noSocio);
                 }
 
                 bool esnumero = int.TryParse(respuesta, out int codigo);
@@ -98,6 +90,8 @@ namespace ClubDeportivo
                         MessageBox.Show("Almacenado con éxito con el Id Nro " + respuesta, "AVISO DEL SISTEMA",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Question);
+                        principal.Show();
+                        this.Hide();
                     }
                 }
             }

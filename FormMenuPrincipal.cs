@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClubDeportivo.Datos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,7 +23,7 @@ namespace ClubDeportivo
 
         private void FormMenuPrincipal_Load(object sender, EventArgs e)
         {
-            lblUsuario.Text = "USUARIO: " + usuario + " " + "(" + rol +
+            lblUsuario.Text = "USUARIO: " + SesionUsuario.Usuario + " " + "(" + SesionUsuario.Rol +
             ")";
         }
 
@@ -33,28 +34,28 @@ namespace ClubDeportivo
 
         private void btnInscribir_Click(object sender, EventArgs e)
         {
-            FormInscripcion frmInscripcion = new FormInscripcion(this);
+            FormInscripcion frmInscripcion = new FormInscripcion();
             frmInscripcion.Show();
             this.Hide();
         }
 
         private void btnAsignarAct_Click(object sender, EventArgs e)
         {
-            FormAsignarAct frmAsignarAct = new FormAsignarAct(this);
+            FormAsignarAct frmAsignarAct = new FormAsignarAct();
             frmAsignarAct.Show();
             this.Hide();
         }
 
         private void btnPagar_Click(object sender, EventArgs e)
         {
-            FormPagar frmPagar = new FormPagar(this);
+            FormPagar frmPagar = new FormPagar();
             frmPagar.Show();
             this.Hide();
         }
 
         private void btnVencimiento_Click(object sender, EventArgs e)
         {
-            FormVencimiento frmVencimiento = new FormVencimiento(this);
+            FormVencimiento frmVencimiento = new FormVencimiento();
             frmVencimiento.Show();
             this.Hide();
         }

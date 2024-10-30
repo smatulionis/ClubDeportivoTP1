@@ -14,17 +14,15 @@ namespace ClubDeportivo
 {
     public partial class FormVencimiento : Form
     {
-        private FormMenuPrincipal _formMenuPrincipal;
-
-        public FormVencimiento(FormMenuPrincipal formMenuPrincipal)
+        public FormVencimiento()
         {
             InitializeComponent();
-            _formMenuPrincipal = formMenuPrincipal;
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            _formMenuPrincipal.Show();
+            FormMenuPrincipal principal = new FormMenuPrincipal();
+            principal.Show();
             this.Hide();
         }
 
@@ -35,12 +33,12 @@ namespace ClubDeportivo
             {
                 string query;
                 sqlCon = Conexion.getInstancia().CrearConexion();
-                query = "select s.IdCliente, Nombre, Apellido, Fecha " +
+                query = "select s.IdCliente, c.Nombre, c.Apellido, cuo.Fecha " +
                         "from socio s " +
                         "inner join cliente c on s.IdCliente = c.IdCliente " +
                         "inner join cuota cuo on c.IdCliente = cuo.IdCliente " +
                         "where cuo.Fecha = DATE_SUB(CURDATE(), INTERVAL 30 DAY) " +
-                        "order by Nombre";
+                        "order by c.Nombre";
 
                 MySqlCommand comando = new MySqlCommand(query, sqlCon);
                 comando.CommandType = CommandType.Text;
@@ -58,10 +56,6 @@ namespace ClubDeportivo
                         dtgvActividad.Rows[renglon].Cells[3].Value = reader.GetDateTime(3).ToString("dd/MM/yyyy");
                     }
                 }
-                else
-                {
-                    MessageBox.Show("NO HAY DATOS PARA LA CARGA DE LA GRILLA");
-                }
             }
             catch (Exception ex)
             {
@@ -75,6 +69,5 @@ namespace ClubDeportivo
                 }
             }
         }
-
     }
 }

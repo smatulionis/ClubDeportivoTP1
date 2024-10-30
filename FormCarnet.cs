@@ -13,11 +13,9 @@ namespace ClubDeportivo
 {
     public partial class FormCarnet : Form
     {
-        private FormMenuPrincipal _formMenuPrincipal;
-        public FormCarnet(FormMenuPrincipal formMenuPrincipal)
+        public FormCarnet()
         {
             InitializeComponent();
-            _formMenuPrincipal = formMenuPrincipal;
         }
 
         public string? alumComprobante;
@@ -33,7 +31,8 @@ namespace ClubDeportivo
 
             MessageBox.Show("Operación exitosa", "AVISO DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            _formMenuPrincipal.Show();
+            FormPagar frmPagar = new FormPagar();
+            frmPagar.Show();
             this.Close();
         }
 
