@@ -49,31 +49,17 @@ namespace ClubDeportivo
 
                 if (tipoCliente == "Socio")
                 {
-                    E_Socio socio = new E_Socio
-                    {
-                        Nombre = txtNombre.Text,
-                        Apellido = txtApellido.Text,
-                        Documento = Convert.ToInt32(txtDocumento.Text),
-                        TipoDoc = cboTipo.Text,
-                        AptoFisico = chkApto.Checked
-                    };
+                    E_Socio socio = new E_Socio(txtNombre.Text, txtApellido.Text, cboTipo.Text, Convert.ToInt32(txtDocumento.Text), chkApto.Checked);
 
                     Socios socios = new Socios();
-                    respuesta = socios.nuevoCliente(socio);
+                    respuesta = socios.altaCliente(socio, true);
                 }
                 else
                 {
-                    E_NoSocio noSocio = new E_NoSocio
-                    {
-                        Nombre = txtNombre.Text,
-                        Apellido = txtApellido.Text,
-                        Documento = Convert.ToInt32(txtDocumento.Text),
-                        TipoDoc = cboTipo.Text,
-                        AptoFisico = chkApto.Checked
-                    };
+                    E_NoSocio noSocio = new E_NoSocio(txtNombre.Text, txtApellido.Text, cboTipo.Text, Convert.ToInt32(txtDocumento.Text), chkApto.Checked);
 
                     NoSocios noSocios = new NoSocios();
-                    respuesta = noSocios.nuevoCliente(noSocio);
+                    respuesta = noSocios.altaCliente(noSocio, false);
                 }
 
                 bool esnumero = int.TryParse(respuesta, out int codigo);

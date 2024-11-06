@@ -11,9 +11,5 @@ namespace ClubDeportivo.Datos
 {
     class Socios : Clientes
     {
-        public string nuevoCliente(E_Socio socio)
-        {
-            return altaCliente(socio, true);
-        }
     }
 }

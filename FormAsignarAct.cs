@@ -85,10 +85,8 @@ namespace ClubDeportivo
                     int idActividad = Convert.ToInt32(dtgvActividad.Rows[e.RowIndex].Cells[0].Value);
                     string respuesta;
 
-                    E_Inscripcion inscripcion = new E_Inscripcion();
-                    inscripcion.IdCliente = Convert.ToInt32(txtIdCliente.Text);
-                    inscripcion.IdActividad = idActividad;
-
+                    E_Inscripcion inscripcion = new E_Inscripcion(Convert.ToInt32(txtIdCliente.Text), idActividad);
+                    
                     Datos.Inscripcion asigInscripcion = new Datos.Inscripcion();
                     respuesta = asigInscripcion.nuevaInscripcion(inscripcion);
 

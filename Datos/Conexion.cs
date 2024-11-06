@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -50,6 +51,39 @@ namespace ClubDeportivo.Datos
                 con = new Conexion();
             }
             return con;
+        }
+
+        public static string ejecutarProcedimiento(string nombreProcedimiento, MySqlParameter[] parametros)
+        {
+            string? salida;
+            MySqlConnection sqlCon = new MySqlConnection();
+            try
+            {
+                sqlCon = Conexion.getInstancia().CrearConexion();
+                MySqlCommand comando = new MySqlCommand(nombreProcedimiento, sqlCon);
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.AddRange(parametros);
+
+                MySqlParameter ParCodigo = new MySqlParameter();
+                ParCodigo.ParameterName = "rta";
+                ParCodigo.MySqlDbType = MySqlDbType.Int32;
+                ParCodigo.Direction = ParameterDirection.Output;
+                comando.Parameters.Add(ParCodigo);
+
+                sqlCon.Open();
+                comando.ExecuteNonQuery();
+                salida = Convert.ToString(ParCodigo.Value);
+            }
+            catch (Exception ex)
+            {
+                salida = ex.Message;
+            }
+            finally
+            {
+                if (sqlCon.State == ConnectionState.Open)
+                { sqlCon.Close(); };
+            }
+            return salida;
         }
     }
 }

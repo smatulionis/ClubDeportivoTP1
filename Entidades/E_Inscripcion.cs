@@ -9,14 +9,14 @@ namespace ClubDeportivo.Entidades
 {
     public class E_Inscripcion
     {
-        public int IdInscripcion { get; set; }
-        public int IdCliente { get; set; }
-        public int IdActividad { get; set; }
-        public bool Pagado { get; set; }
+        public int IdInscripcion { get; private set; }
+        public int IdCliente { get; private set; }
+        public int IdActividad { get; private set; }
 
-        public E_Inscripcion()
+        public E_Inscripcion(int idCliente, int idActividad)
         {
-            Pagado = false;
+            IdCliente = idCliente;
+            IdActividad = idActividad;
         }
     }
 }

@@ -40,21 +40,24 @@
             // 
             // btnVolver
             // 
-            btnVolver.Location = new Point(342, 108);
+            btnVolver.BackColor = Color.Cyan;
+            btnVolver.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVolver.ForeColor = Color.Blue;
+            btnVolver.Location = new Point(397, 75);
             btnVolver.Name = "btnVolver";
             btnVolver.Size = new Size(101, 31);
             btnVolver.TabIndex = 19;
             btnVolver.Text = "Volver";
-            btnVolver.UseVisualStyleBackColor = true;
+            btnVolver.UseVisualStyleBackColor = false;
             btnVolver.Click += btnVolver_Click;
             // 
             // lblVencimiento
             // 
             lblVencimiento.AutoSize = true;
-            lblVencimiento.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            lblVencimiento.Location = new Point(78, 46);
+            lblVencimiento.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblVencimiento.Location = new Point(50, 32);
             lblVencimiento.Name = "lblVencimiento";
-            lblVencimiento.Size = new Size(365, 20);
+            lblVencimiento.Size = new Size(414, 18);
             lblVencimiento.TabIndex = 18;
             lblVencimiento.Text = "Socios con vencimiento de cuota en el día de la fecha";
             // 
@@ -63,7 +66,7 @@
             dtgvActividad.AllowUserToDeleteRows = false;
             dtgvActividad.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgvActividad.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4 });
-            dtgvActividad.Location = new Point(27, 182);
+            dtgvActividad.Location = new Point(24, 129);
             dtgvActividad.Name = "dtgvActividad";
             dtgvActividad.ReadOnly = true;
             dtgvActividad.RowTemplate.Height = 25;
@@ -99,7 +102,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(525, 421);
+            BackColor = Color.FromArgb(255, 128, 255);
+            ClientSize = new Size(525, 327);
             Controls.Add(btnVolver);
             Controls.Add(lblVencimiento);
             Controls.Add(dtgvActividad);

@@ -32,46 +32,39 @@ namespace ClubDeportivo
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             lblTitulo = new Label();
-            pictureBox1 = new PictureBox();
             btnIngresar = new Button();
             txtUsuario = new TextBox();
             txtContrasenia = new TextBox();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTitulo.Location = new Point(167, 47);
+            lblTitulo.Font = new Font("Perpetua Titling MT", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            lblTitulo.Location = new Point(114, 31);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(146, 28);
+            lblTitulo.Size = new Size(241, 29);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "Club Deportivo";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(32, 106);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(173, 142);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 3;
-            pictureBox1.TabStop = false;
-            // 
             // btnIngresar
             // 
-            btnIngresar.Location = new Point(292, 194);
+            btnIngresar.BackColor = Color.Cyan;
+            btnIngresar.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnIngresar.ForeColor = Color.Blue;
+            btnIngresar.Location = new Point(309, 208);
             btnIngresar.Name = "btnIngresar";
-            btnIngresar.Size = new Size(75, 23);
+            btnIngresar.Size = new Size(99, 38);
             btnIngresar.TabIndex = 4;
             btnIngresar.Text = "Ingresar";
-            btnIngresar.UseVisualStyleBackColor = true;
+            btnIngresar.UseVisualStyleBackColor = false;
             btnIngresar.Click += btnIngresar_Click;
             // 
             // txtUsuario
             // 
-            txtUsuario.Location = new Point(235, 106);
+            txtUsuario.Location = new Point(252, 120);
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(195, 23);
             txtUsuario.TabIndex = 5;
@@ -81,7 +74,7 @@ namespace ClubDeportivo
             // 
             // txtContrasenia
             // 
-            txtContrasenia.Location = new Point(235, 148);
+            txtContrasenia.Location = new Point(252, 162);
             txtContrasenia.Name = "txtContrasenia";
             txtContrasenia.Size = new Size(195, 23);
             txtContrasenia.TabIndex = 6;
@@ -89,10 +82,21 @@ namespace ClubDeportivo
             txtContrasenia.Enter += txtContrasenia_Enter;
             txtContrasenia.Leave += txtContrasenia_Leave;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(21, 106);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(197, 153);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
+            // 
             // FormLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Violet;
             ClientSize = new Size(472, 293);
             Controls.Add(txtContrasenia);
             Controls.Add(txtUsuario);
@@ -100,7 +104,7 @@ namespace ClubDeportivo
             Controls.Add(pictureBox1);
             Controls.Add(lblTitulo);
             Name = "FormLogin";
-            Text = "Form1";
+            Text = "LogIn";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -116,9 +120,9 @@ namespace ClubDeportivo
 
 
         private Label lblTitulo;
-        private PictureBox pictureBox1;
         private Button btnIngresar;
         private TextBox txtUsuario;
         private TextBox txtContrasenia;
+        private PictureBox pictureBox1;
     }
 }

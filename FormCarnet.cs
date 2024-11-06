@@ -20,6 +20,7 @@ namespace ClubDeportivo
 
         public string? alumComprobante;
         public DateTime fechaComprobante;
+        public string idSocio;
 
         private void btnImprimir_Click(object sender, EventArgs e)
         {
@@ -51,6 +52,7 @@ namespace ClubDeportivo
 
         private void FormCarnet_Load(object sender, EventArgs e)
         {
+            lblIdSocio.Text = idSocio;
             lblNombre.Text = alumComprobante;
             lblFecha.Text = fechaComprobante.ToString("dd/MM/yyyy");
         }

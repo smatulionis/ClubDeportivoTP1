@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|c:\\users\\sebasti\u00E1n\\documents\\tecnicatura desarrollo software\\desarrollo sist orientados a obj\\clubdeportivo\\proyecto-clubdeportivo\\datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|solutionrelative:datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|c:\\users\\sebasti\u00E1n\\documents\\tecnicatura desarrollo software\\desarrollo sist orientados a obj\\clubdeportivo\\proyecto-clubdeportivo\\formvencimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D97D6E-15DE-4554-A9C1-103B283780ED}|ClubDeportivo.csproj|solutionrelative:formvencimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,33 +9,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Conexion.cs",
-              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\Datos\\Conexion.cs",
-              "RelativeDocumentMoniker": "Datos\\Conexion.cs",
-              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\Datos\\Conexion.cs",
-              "RelativeToolTip": "Datos\\Conexion.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T21:26:12.311Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormVencimiento.cs",
-              "DocumentMoniker": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\FormVencimiento.cs",
-              "RelativeDocumentMoniker": "FormVencimiento.cs",
-              "ToolTip": "C:\\Users\\Sebasti\u00E1n\\Documents\\Tecnicatura Desarrollo Software\\Desarrollo Sist Orientados a Obj\\ClubDeportivo\\Proyecto-ClubDeportivo\\FormVencimiento.cs",
-              "RelativeToolTip": "FormVencimiento.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAcwCgAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T20:51:06.972Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             }
           ]
         }

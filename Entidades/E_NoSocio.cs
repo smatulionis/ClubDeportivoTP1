@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ClubDeportivo.Entidades
 {
-    public class E_NoSocio : E_Cliente
+    class E_NoSocio : E_Cliente
     {
+        public E_NoSocio(string nombre, string apellido, string tipoDoc, int documento, bool aptoFisico)
+            : base(nombre, apellido, tipoDoc, documento, aptoFisico)
+        {
+        }
     }
 }

@@ -66,7 +66,6 @@ create table inscripcion(
 IdInscripcion int auto_increment key,
 IdCliente int,
 IdActividad int,
-Pagado bool,
 constraint fk_inscripcion_cliente foreign key (IdCliente) references cliente(IdCliente),
 constraint fk_inscripcion_actividad foreign key (IdActividad) references actividad(IdActividad)
 );
@@ -127,7 +126,6 @@ delimiter //
 create procedure InscribirCliente(
     in Cli int,
     in Act int,
-    in Pag bool,
     out rta int
 )
 begin
@@ -138,8 +136,8 @@ begin
     if clienteExiste = 0 then
         set rta = -1;
     else
-            insert into inscripcion (IdCliente, IdActividad, Pagado)
-            values (Cli, Act, Pag);
+            insert into inscripcion (IdCliente, IdActividad)
+            values (Cli, Act);
 
             set rta = LAST_INSERT_ID();
     end if;
@@ -152,15 +150,21 @@ create procedure AbonarCuota(
     in Cli int,
     in Monto float,
     in Fecha date,
-    in FPago varchar(40)
+    in FPago varchar(40),
+    out rta int
 )
 begin
+	if not exists (
+        select 1 
+        from inscripcion 
+        where IdCliente = Cli
+    ) then
+        set rta = -1;
+    else
 		insert into cuota (IdCliente, Monto, Fecha, FormaPago)
 		values (Cli, Monto, Fecha, FPago);
-
-		update inscripcion
-        set Pagado = true
-        where IdCliente = Cli and Pagado = false;
+		set rta = 1;
+    end if;
 end 
 //
 

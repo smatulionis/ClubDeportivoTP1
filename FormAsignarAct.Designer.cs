@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             dtgvActividad = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
             lblActividades = new Label();
             label1 = new Label();
             txtIdCliente = new TextBox();
             btnVolver = new Button();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dtgvActividad).BeginInit();
             SuspendLayout();
             // 
@@ -44,50 +44,13 @@
             dtgvActividad.AllowUserToDeleteRows = false;
             dtgvActividad.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgvActividad.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
-            dtgvActividad.Location = new Point(54, 124);
+            dtgvActividad.Location = new Point(34, 125);
             dtgvActividad.Name = "dtgvActividad";
             dtgvActividad.ReadOnly = true;
             dtgvActividad.RowTemplate.Height = 25;
             dtgvActividad.Size = new Size(455, 184);
             dtgvActividad.TabIndex = 0;
             dtgvActividad.CellClick += dtgvActividad_CellClick;
-            // 
-            // lblActividades
-            // 
-            lblActividades.AutoSize = true;
-            lblActividades.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            lblActividades.Location = new Point(199, 25);
-            lblActividades.Name = "lblActividades";
-            lblActividades.Size = new Size(124, 20);
-            lblActividades.TabIndex = 1;
-            lblActividades.Text = "Asignar actividad";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(54, 84);
-            label1.Name = "label1";
-            label1.Size = new Size(57, 15);
-            label1.TabIndex = 2;
-            label1.Text = "Id Cliente";
-            // 
-            // txtIdCliente
-            // 
-            txtIdCliente.Location = new Point(117, 81);
-            txtIdCliente.Name = "txtIdCliente";
-            txtIdCliente.Size = new Size(101, 23);
-            txtIdCliente.TabIndex = 3;
-            // 
-            // btnVolver
-            // 
-            btnVolver.Location = new Point(408, 73);
-            btnVolver.Name = "btnVolver";
-            btnVolver.Size = new Size(101, 31);
-            btnVolver.TabIndex = 16;
-            btnVolver.Text = "Volver";
-            btnVolver.UseVisualStyleBackColor = true;
-            btnVolver.Click += btnVolver_Click;
             // 
             // Column1
             // 
@@ -107,11 +70,52 @@
             Column3.Name = "Column3";
             Column3.ReadOnly = true;
             // 
+            // lblActividades
+            // 
+            lblActividades.AutoSize = true;
+            lblActividades.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblActividades.Location = new Point(179, 26);
+            lblActividades.Name = "lblActividades";
+            lblActividades.Size = new Size(135, 18);
+            lblActividades.TabIndex = 1;
+            lblActividades.Text = "Asignar actividad";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(34, 85);
+            label1.Name = "label1";
+            label1.Size = new Size(68, 15);
+            label1.TabIndex = 2;
+            label1.Text = "Id Cliente";
+            // 
+            // txtIdCliente
+            // 
+            txtIdCliente.Location = new Point(108, 82);
+            txtIdCliente.Name = "txtIdCliente";
+            txtIdCliente.Size = new Size(101, 23);
+            txtIdCliente.TabIndex = 3;
+            // 
+            // btnVolver
+            // 
+            btnVolver.BackColor = Color.Cyan;
+            btnVolver.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVolver.ForeColor = Color.Blue;
+            btnVolver.Location = new Point(388, 74);
+            btnVolver.Name = "btnVolver";
+            btnVolver.Size = new Size(101, 31);
+            btnVolver.TabIndex = 16;
+            btnVolver.Text = "Volver";
+            btnVolver.UseVisualStyleBackColor = false;
+            btnVolver.Click += btnVolver_Click;
+            // 
             // FormAsignarAct
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(566, 370);
+            BackColor = Color.FromArgb(255, 128, 255);
+            ClientSize = new Size(520, 345);
             Controls.Add(btnVolver);
             Controls.Add(txtIdCliente);
             Controls.Add(label1);

@@ -35,106 +35,131 @@
             btnVolver = new Button();
             lblFormaPago = new Label();
             chkEfectivo = new CheckBox();
-            chkTarjeta = new CheckBox();
             btnCarnet = new Button();
+            cboTarjeta = new ComboBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // lblIdCliente
             // 
             lblIdCliente.AutoSize = true;
-            lblIdCliente.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            lblIdCliente.Location = new Point(90, 57);
+            lblIdCliente.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblIdCliente.Location = new Point(22, 24);
             lblIdCliente.Name = "lblIdCliente";
-            lblIdCliente.Size = new Size(145, 20);
+            lblIdCliente.Size = new Size(177, 20);
             lblIdCliente.TabIndex = 0;
             lblIdCliente.Text = "Ingrese Id de Cliente";
             // 
             // txtIdCliente
             // 
-            txtIdCliente.Location = new Point(135, 93);
+            txtIdCliente.Location = new Point(83, 57);
             txtIdCliente.Name = "txtIdCliente";
-            txtIdCliente.Size = new Size(51, 23);
+            txtIdCliente.Size = new Size(49, 23);
             txtIdCliente.TabIndex = 1;
             // 
             // btnPagar
             // 
-            btnPagar.Location = new Point(111, 161);
+            btnPagar.BackColor = Color.Cyan;
+            btnPagar.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnPagar.ForeColor = Color.Blue;
+            btnPagar.Location = new Point(43, 128);
             btnPagar.Name = "btnPagar";
             btnPagar.Size = new Size(101, 31);
             btnPagar.TabIndex = 14;
             btnPagar.Text = "Pagar";
-            btnPagar.UseVisualStyleBackColor = true;
+            btnPagar.UseVisualStyleBackColor = false;
             btnPagar.Click += btnPagar_Click;
             // 
             // btnComprobante
             // 
+            btnComprobante.BackColor = Color.Cyan;
             btnComprobante.Enabled = false;
-            btnComprobante.Location = new Point(111, 212);
+            btnComprobante.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnComprobante.ForeColor = Color.Blue;
+            btnComprobante.Location = new Point(43, 179);
             btnComprobante.Name = "btnComprobante";
             btnComprobante.Size = new Size(101, 31);
             btnComprobante.TabIndex = 15;
             btnComprobante.Text = "Comprobante";
-            btnComprobante.UseVisualStyleBackColor = true;
+            btnComprobante.UseVisualStyleBackColor = false;
             btnComprobante.Click += btnComprobante_Click;
             // 
             // btnVolver
             // 
-            btnVolver.Location = new Point(316, 235);
+            btnVolver.BackColor = Color.Cyan;
+            btnVolver.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVolver.ForeColor = Color.Blue;
+            btnVolver.Location = new Point(325, 226);
             btnVolver.Name = "btnVolver";
             btnVolver.Size = new Size(101, 31);
             btnVolver.TabIndex = 16;
             btnVolver.Text = "Volver";
-            btnVolver.UseVisualStyleBackColor = true;
+            btnVolver.UseVisualStyleBackColor = false;
             btnVolver.Click += btnVolver_Click;
             // 
             // lblFormaPago
             // 
             lblFormaPago.AutoSize = true;
-            lblFormaPago.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            lblFormaPago.Location = new Point(330, 78);
+            lblFormaPago.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            lblFormaPago.Location = new Point(269, 42);
             lblFormaPago.Name = "lblFormaPago";
-            lblFormaPago.Size = new Size(87, 15);
+            lblFormaPago.Size = new Size(105, 15);
             lblFormaPago.TabIndex = 17;
             lblFormaPago.Text = "Forma de Pago";
             // 
             // chkEfectivo
             // 
             chkEfectivo.AutoSize = true;
-            chkEfectivo.Location = new Point(346, 106);
+            chkEfectivo.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            chkEfectivo.Location = new Point(278, 70);
             chkEfectivo.Name = "chkEfectivo";
-            chkEfectivo.Size = new Size(68, 19);
+            chkEfectivo.Size = new Size(76, 19);
             chkEfectivo.TabIndex = 20;
             chkEfectivo.Text = "Efectivo";
             chkEfectivo.UseVisualStyleBackColor = true;
             // 
-            // chkTarjeta
-            // 
-            chkTarjeta.AutoSize = true;
-            chkTarjeta.Location = new Point(346, 131);
-            chkTarjeta.Name = "chkTarjeta";
-            chkTarjeta.Size = new Size(60, 19);
-            chkTarjeta.TabIndex = 21;
-            chkTarjeta.Text = "Tarjeta";
-            chkTarjeta.UseVisualStyleBackColor = true;
-            // 
             // btnCarnet
             // 
+            btnCarnet.BackColor = Color.Cyan;
             btnCarnet.Enabled = false;
-            btnCarnet.Location = new Point(111, 259);
+            btnCarnet.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCarnet.ForeColor = Color.Blue;
+            btnCarnet.Location = new Point(43, 226);
             btnCarnet.Name = "btnCarnet";
             btnCarnet.Size = new Size(101, 31);
             btnCarnet.TabIndex = 22;
             btnCarnet.Text = "Carnet";
-            btnCarnet.UseVisualStyleBackColor = true;
+            btnCarnet.UseVisualStyleBackColor = false;
             btnCarnet.Click += btnCarnet_Click;
+            // 
+            // cboTarjeta
+            // 
+            cboTarjeta.FormattingEnabled = true;
+            cboTarjeta.Items.AddRange(new object[] { "1 cuota", "3 cuotas", "6 cuotas" });
+            cboTarjeta.Location = new Point(336, 95);
+            cboTarjeta.Name = "cboTarjeta";
+            cboTarjeta.Size = new Size(90, 23);
+            cboTarjeta.TabIndex = 23;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(278, 98);
+            label1.Name = "label1";
+            label1.Size = new Size(52, 15);
+            label1.TabIndex = 24;
+            label1.Text = "Tarjeta";
             // 
             // FormPagar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(476, 312);
+            BackColor = Color.FromArgb(255, 128, 255);
+            ClientSize = new Size(450, 290);
+            Controls.Add(label1);
+            Controls.Add(cboTarjeta);
             Controls.Add(btnCarnet);
-            Controls.Add(chkTarjeta);
             Controls.Add(chkEfectivo);
             Controls.Add(lblFormaPago);
             Controls.Add(btnVolver);
@@ -157,7 +182,8 @@
         private Button btnVolver;
         private Label lblFormaPago;
         private CheckBox chkEfectivo;
-        private CheckBox chkTarjeta;
         private Button btnCarnet;
+        private ComboBox cboTarjeta;
+        private Label label1;
     }
 }

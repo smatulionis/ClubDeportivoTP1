@@ -47,69 +47,82 @@
             // 
             // btnInscribir
             // 
-            btnInscribir.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            btnInscribir.Location = new Point(91, 146);
+            btnInscribir.BackColor = Color.Cyan;
+            btnInscribir.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnInscribir.ForeColor = Color.Blue;
+            btnInscribir.Location = new Point(31, 82);
             btnInscribir.Name = "btnInscribir";
             btnInscribir.Size = new Size(258, 91);
             btnInscribir.TabIndex = 1;
             btnInscribir.Text = "Inscribir Cliente";
-            btnInscribir.UseVisualStyleBackColor = true;
+            btnInscribir.UseVisualStyleBackColor = false;
             btnInscribir.Click += btnInscribir_Click;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(583, 51);
+            btnSalir.BackColor = Color.Cyan;
+            btnSalir.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSalir.ForeColor = Color.Blue;
+            btnSalir.Location = new Point(260, 353);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(84, 35);
+            btnSalir.Size = new Size(113, 46);
             btnSalir.TabIndex = 2;
             btnSalir.Text = "Salir";
-            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
             // 
             // btnAsignarAct
             // 
-            btnAsignarAct.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            btnAsignarAct.Location = new Point(409, 146);
+            btnAsignarAct.BackColor = Color.Cyan;
+            btnAsignarAct.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAsignarAct.ForeColor = Color.Blue;
+            btnAsignarAct.Location = new Point(339, 82);
             btnAsignarAct.Name = "btnAsignarAct";
             btnAsignarAct.Size = new Size(258, 91);
             btnAsignarAct.TabIndex = 3;
             btnAsignarAct.Text = "Asignar Actividad";
-            btnAsignarAct.UseVisualStyleBackColor = true;
+            btnAsignarAct.UseVisualStyleBackColor = false;
             btnAsignarAct.Click += btnAsignarAct_Click;
             // 
             // btnPagar
             // 
-            btnPagar.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            btnPagar.Location = new Point(91, 276);
+            btnPagar.BackColor = Color.Cyan;
+            btnPagar.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnPagar.ForeColor = Color.Blue;
+            btnPagar.Location = new Point(31, 223);
             btnPagar.Name = "btnPagar";
             btnPagar.Size = new Size(258, 91);
             btnPagar.TabIndex = 4;
             btnPagar.Text = "Pagar";
-            btnPagar.UseVisualStyleBackColor = true;
+            btnPagar.UseVisualStyleBackColor = false;
             btnPagar.Click += btnPagar_Click;
             // 
             // btnVencimiento
             // 
-            btnVencimiento.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            btnVencimiento.Location = new Point(409, 276);
+            btnVencimiento.BackColor = Color.Cyan;
+            btnVencimiento.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVencimiento.ForeColor = Color.Blue;
+            btnVencimiento.Location = new Point(339, 223);
             btnVencimiento.Name = "btnVencimiento";
             btnVencimiento.Size = new Size(258, 91);
             btnVencimiento.TabIndex = 5;
             btnVencimiento.Text = "Listar socios con vencimiento de cuota";
-            btnVencimiento.UseVisualStyleBackColor = true;
+            btnVencimiento.UseVisualStyleBackColor = false;
             btnVencimiento.Click += btnVencimiento_Click;
             // 
             // FormMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.FromArgb(255, 128, 255);
+            ClientSize = new Size(628, 436);
             Controls.Add(btnVencimiento);
             Controls.Add(btnPagar);
             Controls.Add(btnAsignarAct);
             Controls.Add(btnSalir);
             Controls.Add(btnInscribir);
             Controls.Add(lblUsuario);
+            ForeColor = Color.Black;
             Name = "FormMenuPrincipal";
             Text = "FormMenuPrincipal";
             Load += FormMenuPrincipal_Load;

@@ -48,7 +48,7 @@ namespace ClubDeportivo
                 return;
             }
 
-            if (!chkEfectivo.Checked && !chkTarjeta.Checked)
+            if (!chkEfectivo.Checked && cboTarjeta.SelectedIndex == -1)
             {
                 MessageBox.Show("Debe seleccionar la forma de pago", "AVISO DEL SISTEMA",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -82,37 +82,39 @@ namespace ClubDeportivo
                     montoActividad = reader.GetFloat(0);
                 }
 
-                E_Cuota cuota = new E_Cuota();
-                cuota.IdCliente = Convert.ToInt32(txtIdCliente.Text);
+                string formaPago;
+                if (chkEfectivo.Checked)
+                {
+                    formaPago = "Efectivo";
+                }
+                else
+                {
+                    formaPago = cboTarjeta.SelectedItem.ToString();
+                }
+
+                E_Cuota cuota = new E_Cuota(Convert.ToInt32(txtIdCliente.Text), formaPago);
 
                 respuesta = Clientes.identificarTipoCliente(cuota.IdCliente);
 
-                bool esnumero = int.TryParse(respuesta, out int codigo);
+                bool esnumero = int.TryParse(respuesta, out int codigoCliente);
                 if (esnumero)
                 {
-                    if (codigo == 1) // Socio
+                    if (codigoCliente == 1) // Socio
                     {
-                        if (chkEfectivo.Checked == true)
+                        if (chkEfectivo.Checked)
                         {
-                            cuota.FormaPago = "Efectivo";
-                            cuota.Monto = (float)(cuota.Monto * 0.90);
-                        }
-                        else
-                        {
-                            cuota.FormaPago = "Tarjeta";
+                            cuota.modificarMonto((float)(cuota.Monto * 0.90));
                         }
                     }
-                    else if (codigo == 2) // No Socio
+                    else if (codigoCliente == 2) // No Socio
                     {
-                        if (chkEfectivo.Checked == true)
+                        if (chkEfectivo.Checked)
                         {
-                            cuota.FormaPago = "Efectivo";
-                            cuota.Monto = (float)(montoActividad * 0.90);
+                            cuota.modificarMonto((float)(montoActividad * 0.90));
                         }
                         else
                         {
-                            cuota.FormaPago = "Tarjeta";
-                            cuota.Monto = montoActividad;
+                            cuota.modificarMonto(montoActividad);
                         }
                     }
                     else
@@ -122,17 +124,30 @@ namespace ClubDeportivo
                     }
 
                     Datos.Cuota nuevaCuota = new Datos.Cuota();
-                    nuevaCuota.pagarCuota(cuota);
-                    btnComprobante.Enabled = true;
-                    if (codigo == 1)
+                    respuesta = nuevaCuota.pagarCuota(cuota);
+
+                    bool esnumeroCuota = int.TryParse(respuesta, out int codigoCuota);
+                    if (esnumeroCuota)
                     {
-                        btnCarnet.Enabled = true;
-                    }
-                    MessageBox.Show("CUOTA ABONADA CON ÉXITO", "AVISO DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                        if (codigoCuota == -1)
+                        {
+                            MessageBox.Show("CLIENTE NO ESTA INSCRIPTO EN NINGUNA ACTIVIDAD", "AVISO DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                        else
+                        {
+                            btnComprobante.Enabled = true;
+                            if (codigoCliente == 1)
+                            {
+                                btnCarnet.Enabled = true;
+                            }
+                            MessageBox.Show("CUOTA ABONADA CON ÉXITO", "AVISO DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                        }
+                    }                          
                 }
                 else
                 {
-                    MessageBox.Show("Error al procesar el tipo de cliente: " + respuesta, "AVISO DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error al procesar el pago: " + respuesta, "AVISO DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
@@ -151,9 +166,9 @@ namespace ClubDeportivo
                 sqlCon = Conexion.getInstancia().CrearConexion();
 
                 query = ("select NombreActividad, concat(Nombre, ' ', Apellido), " +
-                         "(select cu.Monto from cuota cu where cu.IdCliente = c.IdCliente order by cu.Fecha desc limit 1) as MontoUltimaCuota, " +
-                         "(select cu.Fecha from cuota cu where cu.IdCliente = c.IdCliente order by cu.Fecha desc limit 1) as FechaUltimaCuota, " +
-                         "(select cu.FormaPago from cuota cu where cu.IdCliente = c.IdCliente order by cu.Fecha desc limit 1) as FormaPagoUltimaCuota, " +
+                         "(select cu.Monto from cuota cu where cu.IdCliente = c.IdCliente order by cu.IdCuota desc limit 1) as MontoUltimaCuota, " +
+                         "(select cu.Fecha from cuota cu where cu.IdCliente = c.IdCliente order by cu.IdCuota desc limit 1) as FechaUltimaCuota, " +
+                         "(select cu.FormaPago from cuota cu where cu.IdCliente = c.IdCliente order by cu.IdCuota desc limit 1) as FormaPagoUltimaCuota, " +
                          "(select min(cu.Fecha) from cuota cu where cu.IdCliente = c.IdCliente) as FechaPrimeraCuota " +
                          "from actividad a " +
                          "inner join inscripcion i on a.IdActividad = i.IdActividad " +
@@ -171,6 +186,7 @@ namespace ClubDeportivo
                 {
                     reader.Read();
 
+                    carnet.idSocio = txtIdCliente.Text;
                     doc.actComprobante = reader.GetString(0);
                     doc.alumComprobante = reader.GetString(1);
                     carnet.alumComprobante = reader.GetString(1);
@@ -179,10 +195,6 @@ namespace ClubDeportivo
                     doc.formaComprobante = reader.GetString(4);    
                     carnet.fechaComprobante = reader.GetDateTime(5); 
                     doc.pagoRepetido = carnet.fechaComprobante.Date < DateTime.Now.Date;
-                }
-                else
-                {
-                    MessageBox.Show("CLIENTE INEXISTENTE", "AVISO DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
@@ -194,7 +206,6 @@ namespace ClubDeportivo
                 if (sqlCon.State == ConnectionState.Open)
                 { sqlCon.Close(); };
             }
-
         }
 
         private void btnCarnet_Click(object sender, EventArgs e)
