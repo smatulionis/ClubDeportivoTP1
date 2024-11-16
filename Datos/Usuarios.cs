@@ -10,6 +10,7 @@ namespace ClubDeportivo.Datos
 {
     internal class Usuarios
     {
+        // Login usuario
         public DataTable usuarioLog(string nombreUsuario, string pass)
         {
             MySqlDataReader resultado;

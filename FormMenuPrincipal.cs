@@ -32,6 +32,7 @@ namespace ClubDeportivo
             Application.Exit();
         }
 
+        // Formulario Registrar Cliente
         private void btnInscribir_Click(object sender, EventArgs e)
         {
             FormInscripcion frmInscripcion = new FormInscripcion();
@@ -39,6 +40,7 @@ namespace ClubDeportivo
             this.Hide();
         }
 
+        // Formulario Asignar actividad a un cliente
         private void btnAsignarAct_Click(object sender, EventArgs e)
         {
             FormAsignarAct frmAsignarAct = new FormAsignarAct();
@@ -46,6 +48,7 @@ namespace ClubDeportivo
             this.Hide();
         }
 
+        // Formulario Pagar
         private void btnPagar_Click(object sender, EventArgs e)
         {
             FormPagar frmPagar = new FormPagar();
@@ -53,6 +56,7 @@ namespace ClubDeportivo
             this.Hide();
         }
 
+        // Formulario Listar socios con vencimiento cuota
         private void btnVencimiento_Click(object sender, EventArgs e)
         {
             FormVencimiento frmVencimiento = new FormVencimiento();

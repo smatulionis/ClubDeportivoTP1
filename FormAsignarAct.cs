@@ -27,6 +27,7 @@ namespace ClubDeportivo
             CargaGrilla();
         }
 
+        // Cargar grilla de Actividades
         public void CargaGrilla()
         {
             MySqlConnection sqlCon = new MySqlConnection();
@@ -70,6 +71,7 @@ namespace ClubDeportivo
             }
         }
 
+        // Inscribir cliente en Actividad
         private void dtgvActividad_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (txtIdCliente.Text == "")

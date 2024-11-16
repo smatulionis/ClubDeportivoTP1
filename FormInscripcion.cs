@@ -28,6 +28,7 @@ namespace ClubDeportivo
             this.Hide();
         }
 
+        // Registrar cliente
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             if (txtNombre.Text == "" || txtApellido.Text == "" ||

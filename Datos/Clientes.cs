@@ -12,6 +12,7 @@ namespace ClubDeportivo.Datos
 {
     abstract class Clientes
     {
+        // Registrar cliente
         public string altaCliente(E_Cliente cliente, bool esSocio)
         {
             MySqlParameter[] parametros = {

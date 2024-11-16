@@ -11,6 +11,7 @@ namespace ClubDeportivo
             InitializeComponent();
         }
 
+        // Login usuario
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             DataTable tablaLogin = new DataTable();

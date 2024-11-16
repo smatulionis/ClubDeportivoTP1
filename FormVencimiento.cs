@@ -26,6 +26,7 @@ namespace ClubDeportivo
             this.Hide();
         }
 
+        // Cargar grilla con Socios con vencimiento de cuota
         private void FormVencimiento_Load(object sender, EventArgs e)
         {
             MySqlConnection sqlCon = new MySqlConnection();

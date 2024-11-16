@@ -64,6 +64,7 @@ namespace ClubDeportivo
 
                 sqlCon = Conexion.getInstancia().CrearConexion();
 
+                // Consultar monto de la Actividad
                 query = ("select Monto from actividad a inner join inscripcion i on a.IdActividad = i.IdActividad" +
                     " inner join cliente c on c.IdCliente = i.IdCliente " +
                     "where c.IdCliente = " +
@@ -99,6 +100,7 @@ namespace ClubDeportivo
                 bool esnumero = int.TryParse(respuesta, out int codigoCliente);
                 if (esnumero)
                 {
+                    // Modificar monto de cuota según sea Socio o No Socio
                     if (codigoCliente == 1) // Socio
                     {
                         if (chkEfectivo.Checked)
@@ -165,6 +167,7 @@ namespace ClubDeportivo
                 string query;
                 sqlCon = Conexion.getInstancia().CrearConexion();
 
+                // Consulta para generar datos de Comprobante y Carnet
                 query = ("select NombreActividad, concat(Nombre, ' ', Apellido), " +
                          "(select cu.Monto from cuota cu where cu.IdCliente = c.IdCliente order by cu.IdCuota desc limit 1) as MontoUltimaCuota, " +
                          "(select cu.Fecha from cuota cu where cu.IdCliente = c.IdCliente order by cu.IdCuota desc limit 1) as FechaUltimaCuota, " +

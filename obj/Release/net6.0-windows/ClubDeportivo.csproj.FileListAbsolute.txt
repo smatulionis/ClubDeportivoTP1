@@ -28,9 +28,14 @@ C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Or
 C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\bin\Release\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\bin\Release\net6.0-windows\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ClubDeportivo.csproj.AssemblyReference.cache
+C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ClubDeportivo.FormAsignarAct.resources
+C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ClubDeportivo.FormCarnet.resources
+C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ClubDeportivo.FormComprobante.resources
 C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ClubDeportivo.FormInscripcion.resources
 C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ClubDeportivo.FormLogin.resources
 C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ClubDeportivo.FormMenuPrincipal.resources
+C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ClubDeportivo.FormPagar.resources
+C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ClubDeportivo.FormVencimiento.resources
 C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ClubDeportivo.Properties.Resources.resources
 C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ClubDeportivo.csproj.GenerateResource.cache
 C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ClubDeportivo.GeneratedMSBuildEditorConfig.editorconfig
@@ -44,4 +49,3 @@ C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Or
 C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ClubDeportivo.pdb
 C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ClubDeportivo.genruntimeconfig.cache
 C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ref\ClubDeportivo.dll
-C:\Users\Sebastián\Documents\Tecnicatura Desarrollo Software\Desarrollo Sist Orientados a Obj\ClubDeportivo\Proyecto-ClubDeportivo\obj\Release\net6.0-windows\ClubDeportivo.FormAsignarAct.resources
